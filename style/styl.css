@@ -1,0 +1,283 @@
+html, body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 10px;
+  scroll-behavior: smooth; }
+
+.content {
+  width: 100%; }
+  .content__wrapper {
+    width: 100%; }
+
+.video {
+  position: absolute; }
+  .video-black, .video video {
+    position: fixed;
+    width: 100%; }
+  .video-black {
+    height: 800px;
+    background-color: rgba(1, 1, 1, 0.5); }
+
+.content__wrapper {
+  width: 100%;
+  display: flex; }
+
+.footer {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  height: 50rem; }
+  .footer__container {
+    background-color: #f5f5f5;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative; }
+    .footer__container-files {
+      position: relative;
+      width: 50%;
+      margin-top: 10rem; }
+      .footer__container-files h2 {
+        font-size: 3rem; }
+      .footer__container-files button {
+        margin: 2rem;
+        width: 7rem;
+        height: 4rem;
+        background: transparent;
+        border: 1px solid #686868;
+        cursor: pointer; }
+        .footer__container-files button:focus {
+          outline: none; }
+        .footer__container-files button:hover {
+          box-shadow: 4px 4px 10px rgba(104, 104, 104, 0.2); }
+        .footer__container-files button:active {
+          transform: translateY(2px);
+          box-shadow: 4px 1px 5px rgba(104, 104, 104, 0.2); }
+    .footer__container-info {
+      position: relative;
+      width: 50%;
+      margin-top: 10rem;
+      margin-right: 5rem;
+      padding-right: 5rem; }
+      .footer__container-info::after {
+        content: '';
+        width: 100%;
+        height: 80%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-right: 1px solid #686868; }
+      .footer__container-info h2 {
+        font-size: 3rem;
+        text-align: right; }
+      .footer__container-info ul {
+        padding: 0;
+        margin: 0;
+        list-style: none; }
+        .footer__container-info ul li {
+          text-align: right;
+          font-size: 2rem;
+          margin: 2rem 0; }
+
+.social {
+  position: fixed;
+  width: 6.4rem;
+  top: 30rem;
+  z-index: 3; }
+  .social button {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: none;
+    background: white;
+    padding: 0px;
+    cursor: pointer;
+    transition: .2s; }
+    .social button img {
+      height: 101%;
+      width: 101%; }
+    .social button:hover {
+      transform: scale(1.3); }
+    .social button:focus {
+      outline: none; }
+    .social button:active {
+      transform: translateY(2px) scale(1.25); }
+
+.name {
+  position: relative;
+  width: 80%;
+  height: 600px;
+  text-align: center;
+  margin-top: 10rem;
+  left: 10%; }
+  .name h3, .name p {
+    font-family: 'Merriweather', serif;
+    margin: 0px;
+    color: #f5f5f5; }
+  .name h1 {
+    margin: 0px;
+    color: #f5f5f5;
+    font-size: 10rem;
+    animation: name-in 1s ease-in; }
+  .name p {
+    font-size: 2rem; }
+
+.skills {
+  width: 100%;
+  margin: 0;
+  position: relative; }
+  .skills_logos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(245, 245, 245, 0.5); }
+    .skills_logos img {
+      margin: 10rem; }
+    .skills_logos-html {
+      width: 20rem;
+      height: 20rem; }
+    .skills_logos-css {
+      width: 20rem;
+      height: 20rem; }
+    .skills_logos-js {
+      width: 17rem;
+      height: 20rem; }
+    .skills_logos-jquery {
+      width: 30rem;
+      height: 20rem; }
+    .skills_logos-sass {
+      width: 30rem;
+      height: 20rem; }
+
+.content__header {
+  width: 50%;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  z-index: 10; }
+  .content__header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center; }
+    .content__header nav ul li {
+      margin: 1rem 2rem;
+      position: relative; }
+      .content__header nav ul li button {
+        font-family: 'Merriweather';
+        border: none;
+        background: none;
+        color: white;
+        font-size: 1.6rem;
+        cursor: pointer;
+        transition: .3s;
+        position: relative; }
+        .content__header nav ul li button:focus {
+          outline: none; }
+        .content__header nav ul li button:active {
+          transform: translateY(2px); }
+        .content__header nav ul li button::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          transform: scaleX(0);
+          transition: .15s;
+          transform-origin: center;
+          top: 0;
+          left: 0;
+          border-bottom: 1px solid white; }
+        .content__header nav ul li button:hover::after {
+          transform: scaleX(1); }
+      .content__header nav ul li::before {
+        content: "";
+        position: absolute;
+        width: 130%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        border-right: 1px solid white; }
+      .content__header nav ul li:last-child::before {
+        border: none; }
+
+.about {
+  width: 90%;
+  margin: 5%;
+  position: relative; }
+  .about_one, .about_two, .about_three, .about_four, .about_five {
+    position: relative;
+    width: 30%;
+    padding: 2rem;
+    background: #f5f5f5; }
+  .about_one {
+    width: 20%;
+    font-size: 2.5rem;
+    left: 20%;
+    font-size: 4rem;
+    text-align: right; }
+  .about_two {
+    top: -10rem;
+    font-size: 2rem;
+    left: 50%;
+    text-align: left; }
+  .about_three {
+    top: -5rem;
+    font-size: 2.3rem;
+    left: 15%;
+    text-align: right; }
+  .about_four {
+    font-size: 2.5rem;
+    left: 35%;
+    text-align: left; }
+  .about_five {
+    width: 40%;
+    font-size: 5rem;
+    left: 60%;
+    text-align: left; }
+
+.projects {
+  width: 100%;
+  margin: 0;
+  position: relative; }
+  .projects h2 {
+    text-align: center;
+    color: #f5f5f5;
+    font-size: 2rem; }
+  .projects__window {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+    .projects__window-pc {
+      width: 50%;
+      height: 100%;
+      margin: 5rem; }
+    .projects__window-rwd {
+      width: 20%;
+      height: 100%;
+      margin: 5rem; }
+
+.u_head {
+  margin: 10rem;
+  width: 25rem;
+  font-size: 5rem;
+  font-weight: bold;
+  left: 10%;
+  background: #f5f5f5; }
+
+.u_card {
+  border-radius: 1rem;
+  box-shadow: 5px 20px 50px black; }
+
+@keyframes name-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-400px); }
+  70% {
+    transform: translateX(100px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0px); } }

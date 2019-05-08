@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat:100,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style/styl.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="video">
+        <video autoplay mute loop preload="auto" src="image/video/typing.mp4"></video>
+        <div class="video-black"></div>
+    </div>  
+    <div class="content">            
+        <header class="content__header">
+            <nav>
+                <ul>
+                    <li><a href="#home"><button>Home</button></a></li>
+                    <li><a href="#about"><button>About</button></a></li>
+                    <li><a href="#skills"><button>Skills</button></a></li>
+                    <li><a href="#projects"><button>Projects</button></a></li>
+                    <li><a href="#info"><button>Info</button></a></li>
+                </ul>
+            </nav>
+        </header>  
+        <div class="content__wrapper"  id="home">
+            <aside class="social">
+                <button><img src="image/icon/fb.png" alt="Facebook"></button>
+                <button><img src="image/icon/ig.png" alt="Instagram"></button>
+                <button><img src="image/icon/gm.png" alt="Gmail"></button>
+                <button><img src="image/icon/li.png" alt="Linkedin"></button>
+                <button><img src="image/icon/gh.png" alt="GitHub"></button>
+            </aside>
+            <article class="name">
+                <h3>Portfolio</h3>
+                <h1>Paweł Jakubiec</h1>
+                <p>If you are looking for hard working junior front-end developer</p>
+            </article>
+        </div>
+        <article class="about" id="about">
+            <h1 class="u_head">About me</h1>
+            <p class="about_one u_card">
+                Hi, i am beginner,<br> self-taught<br>front-end developer. 
+            </p>
+            <p class="about_two u_card">
+                In 2014 i finished Technical High School for Computer Science in 
+                Białogard (Western Pomerania) where i have learned few programming language basics.
+            </p>
+            <p class="about_three u_card">
+                After this i go beyond the polish border to Netherlands where i worked
+                with foreigners and where my speaking in english skills have grown a lot.
+            </p>
+            <p class="about_four u_card">   
+                Nowadays i am writing codes in languages which are require to create website.
+            </p>
+            <p class="about_five u_card">
+                My biggest motivation? <br> My future wife :D
+            </p>
+        </article>
+
+        <article class="skills" id="skills">                 
+            <h1 class="u_head">Skills</h1>
+            <div class="skills_logos">
+                    <img src="image/skills/html5.png" alt="Logo html5" class="skills_logos-html">
+                    <img src="image/skills/css3.png" alt="Logo css3" class="skills_logos-css">
+                    <img src="image/skills/js.png" alt="Logo javasrcipt" class="skills_logos-js">
+                    <img src="image/skills/jquery.png" alt="Logo jquery" class="skills_logos-jquery">
+                    <img src="image/skills/sass.png" alt="Logo sass" class="skills_logos-sass">
+            </div>
+        </article>
+
+        <article class="projects" id="projects">
+            <h1 class="u_head">Projects</h1>
+            <h2>For now i make only one project, but i spent a lot of hours to complete that shop from the front-end side</h2>
+            <div class="projects__window">
+                <img src="image/projects/Angel.jpg" alt="Screen www.angelzory.pl" class="projects__window-pc u_card">
+                <img src="image/projects/Angel_rwd.jpg" alt="Screen www.agelzory.pl" class="projects__window-rwd u_card">
+            </div>
+        </article>
+
+        <footer class="footer" id="info">
+                <h1 class="u_head">Info</h1>
+                <div class="footer__container">
+                    <div class="footer__container-info">
+                        <h2>Dane kontaktowe</h2>                        
+                        <ul>
+                            <li>Paweł Jakubiec</li>
+                            <li>ul.Szymona Koszyka 34/27</li>
+                            <li>Opole 45-720</li>
+                            <li>E-mail: Pawel143700@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="footer__container-files">
+                        <h2>Pobierz moje CV</h2>
+                        <a href="download/Curriculum vitae Jakubiec Pawel.docx" download="CV Jakubiec PL"><button>PL</button></a>
+                        <a href="download/Curriculum vitae Jakubiec Pawel ENG.docx" download="CV Jakubiec EN"><button>EN</button></a>
+                    </div>
+                </div>
+        </footer>           
+        
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
