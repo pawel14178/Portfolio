@@ -47,13 +47,14 @@ html, body {
         height: 4rem;
         background: transparent;
         border: 1px solid #686868;
-        cursor: pointer; }
+        cursor: pointer;
+        transition: .2s; }
         .footer__container-files button:focus {
           outline: none; }
         .footer__container-files button:hover {
           box-shadow: 4px 4px 10px rgba(104, 104, 104, 0.2); }
         .footer__container-files button:active {
-          transform: translateY(2px);
+          transform: translateY(2px) scale(0.95);
           box-shadow: 4px 1px 5px rgba(104, 104, 104, 0.2); }
     .footer__container-info {
       position: relative;
