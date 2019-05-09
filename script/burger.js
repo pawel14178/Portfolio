@@ -1,10 +1,10 @@
 $(function(){
     $(window).on("scroll", function(){
-        if(this.scrollY === 0){            
-            $(".nav_ul").css({"background-image":"linear-gradient(to bottom, transparent, transparent)"});
+        if(this.scrollY != 0){            
+            $(".nav_ul").addClass('u_menu');
         }
         else{
-            $(".nav_ul").css({"background-image":"linear-gradient(to bottom, rgba(90, 90, 90, .8), transparent)"});
+            $(".nav_ul").removeClass('u_menu');
         }
     });    
 
