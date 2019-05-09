@@ -15,7 +15,8 @@
         "skillsme": "Skills",
         "projectsme": "Projects",
         "projectsa": "For now i make only one project",
-        "projectsmodal": "My first major project of clothes boutique with asynchronous loading of products and opinions",
+        "projectsmodala": "My first major project of clothes boutique with asynchronous loading of products and opinions",
+        "projectsmodalb": "... and mobile version",
         "infome": "Info",
         "infocontact": "Contact details",
         "infocv": "Download my CV"
@@ -36,7 +37,8 @@
         "skillsme": "Umiejętności",
         "projectsme": "Projekty",
         "projectsa": "Do tej pory wykonałem jeden projekt",
-        "projectsmodal": "Mój pierwszy, większy projekt butiku z asynchronicznym wczytywaniem produktów oraz opinii",
+        "projectsmodala": "Mój pierwszy, większy projekt butiku z asynchronicznym wczytywaniem produktów oraz opinii",
+        "projectsmodalb": "... oraz wersja mobilna",
         "infome": "Informacje",
         "infocontact": "Dane kontaktowe",
         "infocv": "Pobierz moje CV"
