@@ -10,6 +10,8 @@ html, body {
   width: 100%; }
   .content__wrapper {
     width: 100%; }
+  .content__header {
+    width: 100%; }
 
 .video {
   position: absolute; }
@@ -17,9 +19,29 @@ html, body {
     position: fixed;
     width: 100%; }
   .video-black {
-    height: 800px;
+    height: 100%;
     background-color: rgba(1, 1, 1, 0.5); }
+  .video_pc {
+    display: block; }
+  .video_rwd {
+    display: none; }
 
+@media only screen and (max-width: 600px) {
+  .video {
+    width: 100%; }
+    .video_pc {
+      display: none;
+      width: 100%; }
+    .video_rwd {
+      display: block;
+      width: 100%; } }
+
+/* 
+@media only screen and (max-width: 600px) {
+    
+    
+}
+*/
 .content__wrapper {
   width: 100%;
   display: flex; }
@@ -82,6 +104,44 @@ html, body {
           font-size: 2rem;
           margin: 2rem 0; }
 
+@media only screen and (max-width: 600px) {
+  .footer {
+    height: 30rem;
+    width: 100%; }
+    .footer__container {
+      height: 100%; }
+      .footer__container-files {
+        width: 20%;
+        margin: 3rem 10% 0 0;
+        padding-left: 1rem; }
+        .footer__container-files h2 {
+          font-size: 2rem;
+          text-align: right; }
+        .footer__container-files button {
+          margin: 2rem;
+          width: 7rem;
+          height: 4rem;
+          background: transparent;
+          border: 1px solid #686868;
+          cursor: pointer;
+          transition: .2s; }
+          .footer__container-files button:focus {
+            outline: none; }
+          .footer__container-files button:hover {
+            box-shadow: 4px 4px 10px rgba(104, 104, 104, 0.2); }
+          .footer__container-files button:active {
+            transform: translateY(2px) scale(0.95);
+            box-shadow: 4px 1px 5px rgba(104, 104, 104, 0.2); }
+      .footer__container-info {
+        width: 55%;
+        margin: 3rem 0 0;
+        padding-right: 1rem; }
+        .footer__container-info h2 {
+          font-size: 2rem;
+          text-align: right; }
+        .footer__container-info ul li {
+          font-size: 1.3rem; } }
+
 .social {
   position: fixed;
   width: 6.4rem;
@@ -142,12 +202,21 @@ html, body {
     .language button:focus {
       outline: none; }
 
+@media only screen and (max-width: 600px) {
+  .language {
+    width: 5rem;
+    height: 3rem;
+    left: 1rem; }
+    .language button {
+      font-size: 1rem;
+      padding: 1rem; } }
+
 .name {
   position: relative;
   width: 80%;
   height: 600px;
   text-align: center;
-  margin-top: 10rem;
+  top: 10rem;
   left: 10%; }
   .name h3, .name p {
     font-family: 'Merriweather', serif;
@@ -158,8 +227,48 @@ html, body {
     color: #f5f5f5;
     font-size: 10rem;
     animation: name-in 1s ease-in; }
-  .name p {
-    font-size: 2rem; }
+  .name_small {
+    font-size: 2rem;
+    width: 35%;
+    margin: 0 0 0 40%;
+    text-align: left; }
+    .name_small div {
+      display: block;
+      color: white;
+      font-size: 2rem; }
+    .name_small div:nth-child(1) {
+      margin-left: 0; }
+    .name_small div:nth-child(2) {
+      margin-left: 6%; }
+    .name_small div:nth-child(3) {
+      margin-left: 14%; }
+    .name_small div:nth-child(4) {
+      margin-left: 24%; }
+    .name_small div:nth-child(5) {
+      margin-left: 60%; }
+    .name_small div:nth-child(6) {
+      margin-left: 24%; }
+    .name_small div:nth-child(7) {
+      margin-left: 14%; }
+    .name_small div:nth-child(8) {
+      margin-left: 8%; }
+    .name_small div:nth-child(9) {
+      margin-left: 2%; }
+
+@media only screen and (max-width: 600px) {
+  .name {
+    width: 60%;
+    margin: 10%; }
+    .name_small {
+      font-size: 1.6rem;
+      width: 100%;
+      margin: 0 0 0 20%; }
+    .name h3 {
+      font-size: .5rem; }
+    .name h1 {
+      font-size: 4.5rem; }
+    .name p {
+      font-size: 1.2rem; } }
 
 .skills {
   width: 100%;
@@ -170,7 +279,7 @@ html, body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: rgba(245, 245, 245, 0.8); }
+    background-color: #f5f5f5; }
     .skills_logos img {
       margin: 4rem 10rem; }
     .skills_logos-html {
@@ -192,6 +301,10 @@ html, body {
       width: 30rem;
       height: 20rem; }
 
+@media only screen and (max-width: 600px) {
+  .skills_logos img {
+    margin: 4rem auto; } }
+
 .content__header {
   width: 70rem;
   position: fixed;
@@ -203,7 +316,6 @@ html, body {
     padding: 0;
     list-style: none;
     display: flex;
-    justify-content: center;
     float: right; }
     .content__header nav .nav_ul li {
       margin: 1rem 0;
@@ -288,6 +400,64 @@ html, body {
   -webkit-transform: rotate(0) translateY(0.7rem);
   transform: rotate(0) translateY(0.7rem); }
 
+.nav_ul_rwd {
+  display: none; }
+
+@media only screen and (max-width: 600px) {
+  .content__header nav {
+    display: none; }
+  .burger {
+    top: 2rem;
+    left: 20%;
+    z-index: 100; }
+    .burger_menu-1 {
+      transform: rotate(0deg);
+      top: 0rem;
+      background-color: #686868; }
+    .burger_menu-2 {
+      top: 0.7rem;
+      opacity: 1;
+      background-color: #686868; }
+    .burger_menu-3 {
+      top: 1.4rem;
+      transform: rotate(0deg);
+      background-color: #686868; }
+  .change .burger_menu-1 {
+    -webkit-transform: rotate(45deg) translateY(1rem);
+    transform: rotate(45deg) translateY(1rem);
+    background-color: black; }
+  .change .burger_menu-2 {
+    opacity: 0; }
+  .change .burger_menu-3 {
+    -webkit-transform: rotate(-45deg) translateY(-1rem);
+    transform: rotate(-45deg) translateY(-1rem);
+    background-color: black; }
+  .nav_ul_rwd {
+    transition: .4s ease-in-out;
+    transform: scaleX(0);
+    transform-origin: right;
+    will-change: transform;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(104, 104, 104, 0.95);
+    top: -1rem;
+    left: 0;
+    display: block;
+    opacity: 0;
+    list-style: none;
+    padding: 25%;
+    overflow: hidden; }
+    .nav_ul_rwd button {
+      width: 50%;
+      height: 10rem;
+      background: none;
+      border: none;
+      border-bottom: 1px solid white;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 2rem;
+      color: white; } }
+
 .about {
   width: 90%;
   margin: 5%;
@@ -326,6 +496,40 @@ html, body {
     font-size: 5rem;
     left: 25%;
     text-align: center; }
+
+@media only screen and (max-width: 600px) {
+  .about {
+    width: 90%; }
+    .about_one, .about_two, .about_three, .about_four, .about_five {
+      width: 70%;
+      padding: 1rem;
+      background: #f5f5f5;
+      transition: 1s;
+      transform: translateY(100px);
+      opacity: 0;
+      top: 0;
+      will-change: transform; }
+    .about_one {
+      font-size: 1.5rem;
+      left: 15%;
+      font-size: 2rem;
+      text-align: right; }
+    .about_two {
+      font-size: 2rem;
+      left: 10%;
+      text-align: left; }
+    .about_three {
+      font-size: 1.5rem;
+      left: 15%;
+      text-align: right; }
+    .about_four {
+      font-size: 1.5rem;
+      left: 10%;
+      text-align: left; }
+    .about_five {
+      font-size: 3rem;
+      left: 7%;
+      text-align: center; } }
 
 .projects {
   width: 100%;
@@ -372,12 +576,28 @@ html, body {
     text-align: center;
     font-size: 3rem;
     margin: 0; }
-    .project-modal p a {
-      color: gainsboro; }
-      .project-modal p a:hover {
-        color: #ededed; }
-      .project-modal p a:active {
-        transform: translateY(2px); }
+
+@media only screen and (max-width: 600px) {
+  .projects h2 {
+    font-size: 1.6rem; }
+  .projects__window {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+    .projects__window-pc {
+      display: none; }
+    .projects__window-rwd {
+      position: relative;
+      width: 60%;
+      height: 100%;
+      margin: 2rem; }
+      .projects__window-rwd img {
+        width: 100%;
+        height: 100%; }
+  .project-modal p {
+    padding: 5%;
+    font-size: 2rem;
+    margin: 0; } }
 
 .u_head {
   margin: 10rem;
@@ -405,6 +625,16 @@ html, body {
   background-image: linear-gradient(to bottom, #5a5a5a, transparent);
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem; }
+
+.u_lang {
+  font-size: 1.2rem !important; }
+
+@media only screen and (max-width: 600px) {
+  .u_head {
+    font-size: 3rem;
+    height: 4rem;
+    width: 60%;
+    margin: 5rem 0 1rem 6rem; } }
 
 @keyframes name-in {
   0% {

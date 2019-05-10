@@ -10,17 +10,21 @@
     <title>Portfolio</title>
 </head>
 <body>
+    <!-- Video -->
     <div class="video">
-        <video autoplay mute loop preload="auto" src="image/video/typing.mp4"></video>
+        <video autoplay mute loop preload="auto" poster="image/video/typing-img.jpg" src="image/video/typing.mp4" class="video_pc" width="100%"></video>
+        <video autoplay mute loop preload="auto" poster="image/video/coffe-img.jpg" src="image/video/coffee.mp4" class="video_rwd" width="100%"></video>
         <div class="video-black"></div>
     </div>  
-    <div class="content">            
+    <div class="content">      
+        <!-- Języki -->      
         <div class="language">
             <button class="translate" id="en">EN</button>
             <button class="translate" id="pl">PL</button>
         </div>
         <header class="content__header">
-            <nav>                
+            <nav>       
+                <!-- Menu nawigacyjne PC -->         
                 <ul class="nav_ul">
                     <li><a href="#home"><button key="home" class='lang'>Home</button></a></li>
                     <li><a href="#about"><button key="about" class='lang'>About</button></a></li>
@@ -28,27 +32,46 @@
                     <li><a href="#projects"><button key="projects" class='lang'>Projects</button></a></li>
                     <li><a href="#info"><button key="info" class='lang'>Info</button></a></li>
                 </ul>
-                <div class="burger">
-                    <div class=burger_menu-1></div>
-                    <div class=burger_menu-2></div>
-                    <div class=burger_menu-3></div>
-                </div>
             </nav>
+            <!-- Ikona menu -->
+            <div class="burger">
+                <div class=burger_menu-1></div>
+                <div class=burger_menu-2></div>
+                <div class=burger_menu-3></div>
+            </div>
+            <!-- Menu nawigacyjne RWD -->
+            <ul class="nav_ul_rwd">
+                    <li><a href="#home"><button key="home" class='lang'>Home</button></a></li>
+                    <li><a href="#about"><button key="about" class='lang'>About</button></a></li>
+                    <li><a href="#skills"><button key="skills" class='lang'>Skills</button></a></li>
+                    <li><a href="#projects"><button key="projects" class='lang'>Projects</button></a></li>
+                    <li><a href="#info"><button key="info" class='lang'>Info</button></a></li>
+            </ul>
         </header>  
         <div class="content__wrapper" id="home">
+            <!-- Pasek z ikonami mediów społecznościowych -->
             <aside class="social">
                 <button class="social_fb"><img src="image/icon/fb.png" alt="Facebook"><a href="https://www.facebook.com/pawel.jakubiec.94">Facebook</a></button>
                 <button class="social_ig"><img src="image/icon/ig.png" alt="Instagram"><a href="https://www.instagram.com/jakubiec_pawel/">Instagram</a></button>
                 <button class="social_li"><img src="image/icon/li.png" alt="Linkedin"><a href="https://www.linkedin.com/in/pawe%C5%82-jakubiec-321426153/">LinkedIn</a></button>
                 <button class="social_gh"><img src="image/icon/gh.png" alt="GitHub"><a href="https://github.com/pawel14178">GitHub</a></button>
             </aside>
+            <!-- LOGO -->
             <article class="name">
                 <h3>Portfolio</h3>
                 <h1>Paweł Jakubiec</h1>
-                <p key="sentence" class='lang'>If you are looking for hard working junior front-end developer</p>
+                <div class="name_small">
+                    <div><p>Front-end{</p></div>
+                    <div><p>Senior Developer{</p></div>
+                    <div><p>Mid Developer{</p></div>
+                    <div><p>Junior Developer{</p></div>
+                    <div><img src="image/icon/me.png" alt="me icon" width="25px" height="40px"></div>
+                    <div><p>}</p> </div> <div><p>}</p> </div> <div><p>}</p> </div> <div><p>}</p></div>
+                </div>
             </article>
         </div>
-        <article class="about" id="about">
+        <!-- Sekcja o mnie -->
+        <section class="about" id="about">
             <h1 class="u_head lang" key="aboutme">About me</h1>
             <p class="about_one u_card lang" key="abouta">
                 Hi, i am beginner, self-taught front-end developer. 
@@ -67,9 +90,10 @@
             <p class="about_five u_card lang" key="aboute">
                 My biggest motivation? My girlfriend 
             </p>
-        </article>
+        </section>
 
-        <article class="skills" id="skills">                 
+        <!-- Sekcja umiejętności -->
+        <section class="skills" id="skills">                 
             <h1 class="u_head lang" key="skillsme">Skills</h1>
             <div class="skills_logos">
                     <img src="image/skills/html5.png" alt="Logo html5" class="skills_logos-html">
@@ -79,25 +103,27 @@
                     <img src="image/skills/git.png" alt="Logo git" class="skills_logos-git">
                     <img src="image/skills/sass.png" alt="Logo sass" class="skills_logos-sass">
             </div>
-        </article>
+        </section>
 
-        <article class="projects" id="projects">
+        <!-- Sekcja projekty -->
+        <section class="projects" id="projects">
             <h1 class="u_head lang" key="projectsme">Projects</h1>
             <h2 class="lang" key="projectsa">For now i make only one project</h2>
-            <h2>www.angelzory.pl</h2>
+            <a href="http://www.angelzory.pl"><h2>www.angelzory.pl</h2></a>
             <div class="projects__window">
 
                 <div class="projects__window-pc ">
                         <a href="http://www.angelzory.pl"><div class="project-modal u_card"><p class="lang" key="projectsmodala">My first major project of clothes boutique with asynchronous loading of products and opinions</p></div></a>
-                        <a href="http://www.angelzory.pl"><img src="image/projects/Angel.jpg" alt="Screen www.angelzory.pl" class="u_card" ></a>
+                        <img src="image/projects/Angel.jpg" alt="Screen www.angelzory.pl" class="u_card" ></a>
                 </div>
                 <div class="projects__window-rwd u_card"> 
-                        <a href="http://www.angelzory.pl"><div class="project-modal u_card"><p class="lang" key="projectsmodalb">... and mobile version</p></div></a>
-                        <a href="http://www.angelzory.pl"><img src="image/projects/Angel_rwd.jpg" alt="Screen www.angelzory.pl" class="u_card" ></a>
+                        <div class="project-modal u_card"><p class="lang" key="projectsmodalb">... and mobile version</p></div>
+                        <img src="image/projects/Angel_rwd.jpg" alt="Screen www.angelzory.pl" class="u_card" >
                 </div>
             </div>
-        </article>
+        </section>
 
+        <!-- Stopka -->
         <footer class="footer" id="info">
                 <h1 class="u_head lang" key="infome">Info</h1>
                 <div class="footer__container">
