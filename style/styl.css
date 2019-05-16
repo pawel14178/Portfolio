@@ -46,23 +46,68 @@ html, body {
   width: 100%;
   display: flex; }
 
-.footer {
-  position: relative;
-  margin: 0;
+.footer__container {
+  background-color: #f5f5f5;
   width: 100%;
-  height: 50rem; }
+  height: 100%;
+  display: flex;
+  position: relative; }
+  .footer__container-files {
+    position: relative;
+    width: 50%;
+    margin: 5rem 0; }
+    .footer__container-files h2 {
+      font-size: 3rem; }
+    .footer__container-files button {
+      margin: 2rem;
+      width: 7rem;
+      height: 4rem;
+      background: transparent;
+      border: 1px solid #686868;
+      cursor: pointer;
+      transition: .2s; }
+      .footer__container-files button:focus {
+        outline: none; }
+      .footer__container-files button:hover {
+        box-shadow: 4px 4px 10px rgba(104, 104, 104, 0.2); }
+      .footer__container-files button:active {
+        transform: translateY(2px) scale(0.95);
+        box-shadow: 4px 1px 5px rgba(104, 104, 104, 0.2); }
+  .footer__container-info {
+    position: relative;
+    width: 50%;
+    margin: 5rem;
+    padding-right: 5rem; }
+    .footer__container-info::after {
+      content: '';
+      width: 100%;
+      height: 80%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-right: 1px solid #686868; }
+    .footer__container-info h2 {
+      font-size: 3rem;
+      text-align: right; }
+    .footer__container-info ul {
+      padding: 0;
+      margin: 0;
+      list-style: none; }
+      .footer__container-info ul li {
+        text-align: right;
+        font-size: 2rem;
+        margin: 2rem 0; }
+
+@media only screen and (max-width: 600px) {
   .footer__container {
-    background-color: #f5f5f5;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    position: relative; }
+    height: 100%; }
     .footer__container-files {
-      position: relative;
-      width: 50%;
-      margin-top: 10rem; }
+      width: 20%;
+      margin: 3rem 10% 0 0;
+      padding-left: 1rem; }
       .footer__container-files h2 {
-        font-size: 3rem; }
+        font-size: 2rem;
+        text-align: right; }
       .footer__container-files button {
         margin: 2rem;
         width: 7rem;
@@ -79,68 +124,14 @@ html, body {
           transform: translateY(2px) scale(0.95);
           box-shadow: 4px 1px 5px rgba(104, 104, 104, 0.2); }
     .footer__container-info {
-      position: relative;
-      width: 50%;
-      margin-top: 10rem;
-      margin-right: 5rem;
-      padding-right: 5rem; }
-      .footer__container-info::after {
-        content: '';
-        width: 100%;
-        height: 80%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        border-right: 1px solid #686868; }
+      width: 55%;
+      margin: 3rem 0 0;
+      padding-right: 1rem; }
       .footer__container-info h2 {
-        font-size: 3rem;
+        font-size: 2rem;
         text-align: right; }
-      .footer__container-info ul {
-        padding: 0;
-        margin: 0;
-        list-style: none; }
-        .footer__container-info ul li {
-          text-align: right;
-          font-size: 2rem;
-          margin: 2rem 0; }
-
-@media only screen and (max-width: 600px) {
-  .footer {
-    height: 30rem;
-    width: 100%; }
-    .footer__container {
-      height: 100%; }
-      .footer__container-files {
-        width: 20%;
-        margin: 3rem 10% 0 0;
-        padding-left: 1rem; }
-        .footer__container-files h2 {
-          font-size: 2rem;
-          text-align: right; }
-        .footer__container-files button {
-          margin: 2rem;
-          width: 7rem;
-          height: 4rem;
-          background: transparent;
-          border: 1px solid #686868;
-          cursor: pointer;
-          transition: .2s; }
-          .footer__container-files button:focus {
-            outline: none; }
-          .footer__container-files button:hover {
-            box-shadow: 4px 4px 10px rgba(104, 104, 104, 0.2); }
-          .footer__container-files button:active {
-            transform: translateY(2px) scale(0.95);
-            box-shadow: 4px 1px 5px rgba(104, 104, 104, 0.2); }
-      .footer__container-info {
-        width: 55%;
-        margin: 3rem 0 0;
-        padding-right: 1rem; }
-        .footer__container-info h2 {
-          font-size: 2rem;
-          text-align: right; }
-        .footer__container-info ul li {
-          font-size: 1.3rem; } }
+      .footer__container-info ul li {
+        font-size: 1.3rem; } }
 
 .social {
   position: fixed;
@@ -208,8 +199,7 @@ html, body {
     height: 3rem;
     left: 1rem; }
     .language button {
-      font-size: 1rem;
-      padding: 1rem; } }
+      font-size: 1rem; } }
 
 .name {
   position: relative;
@@ -241,19 +231,7 @@ html, body {
     .name_small div:nth-child(2) {
       margin-left: 6%; }
     .name_small div:nth-child(3) {
-      margin-left: 14%; }
-    .name_small div:nth-child(4) {
-      margin-left: 24%; }
-    .name_small div:nth-child(5) {
-      margin-left: 60%; }
-    .name_small div:nth-child(6) {
-      margin-left: 24%; }
-    .name_small div:nth-child(7) {
-      margin-left: 14%; }
-    .name_small div:nth-child(8) {
-      margin-left: 8%; }
-    .name_small div:nth-child(9) {
-      margin-left: 2%; }
+      margin-left: 20%; }
 
 @media only screen and (max-width: 600px) {
   .name {
@@ -299,6 +277,9 @@ html, body {
       height: 20rem; }
     .skills_logos-sass {
       width: 30rem;
+      height: 20rem; }
+    .skills_logos-sql {
+      width: 20rem;
       height: 20rem; }
 
 @media only screen and (max-width: 600px) {
@@ -446,17 +427,20 @@ html, body {
     display: block;
     opacity: 0;
     list-style: none;
-    padding: 25%;
+    padding: 1rem 25%;
     overflow: hidden; }
     .nav_ul_rwd button {
       width: 50%;
       height: 10rem;
       background: none;
       border: none;
-      border-bottom: 1px solid white;
+      border-bottom: .5px solid white;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       font-size: 2rem;
       color: white; } }
+
+.rwd_info {
+  border-bottom: none !important; }
 
 .about {
   width: 90%;
@@ -493,7 +477,7 @@ html, body {
     top: -8rem; }
   .about_five {
     width: 40%;
-    font-size: 5rem;
+    font-size: 3rem;
     left: 25%;
     text-align: center; }
 
@@ -511,24 +495,24 @@ html, body {
       will-change: transform; }
     .about_one {
       font-size: 1.5rem;
-      left: 15%;
+      left: 10%;
       font-size: 2rem;
       text-align: right; }
     .about_two {
       font-size: 2rem;
-      left: 10%;
+      left: 15%;
       text-align: left; }
     .about_three {
       font-size: 1.5rem;
-      left: 15%;
+      left: 10%;
       text-align: right; }
     .about_four {
       font-size: 1.5rem;
-      left: 10%;
+      left: 15%;
       text-align: left; }
     .about_five {
-      font-size: 3rem;
-      left: 7%;
+      font-size: 2rem;
+      left: 12%;
       text-align: center; } }
 
 .projects {
@@ -599,6 +583,33 @@ html, body {
     font-size: 2rem;
     margin: 0; } }
 
+.certificates {
+  height: 100%; }
+  .certificates_images {
+    height: auto;
+    padding: 0 10%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    grid-auto-columns: minmax(40rem, 1fr);
+    justify-items: center;
+    align-items: stretch;
+    justify-content: center;
+    align-content: center;
+    grid-gap: 5%; }
+    .certificates_images img {
+      width: 90%;
+      height: auto;
+      object-fit: cover; }
+    .certificates_images > * {
+      z-index: 2; }
+
+@media only screen and (max-width: 600px) {
+  .certificates {
+    margin-bottom: 30rem; }
+    .certificates_images img {
+      width: 70%; } }
+
 .u_head {
   margin: 10rem;
   width: 30%;
@@ -627,14 +638,16 @@ html, body {
   border-bottom-right-radius: 2rem; }
 
 .u_lang {
-  font-size: 1.2rem !important; }
+  font-size: 2rem !important; }
 
 @media only screen and (max-width: 600px) {
   .u_head {
     font-size: 3rem;
     height: 4rem;
     width: 60%;
-    margin: 5rem 0 1rem 6rem; } }
+    margin: 5rem 0 1rem 6rem; }
+  .u_lang {
+    font-size: 2rem !important; } }
 
 @keyframes name-in {
   0% {
