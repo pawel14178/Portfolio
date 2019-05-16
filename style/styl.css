@@ -15,7 +15,7 @@ html, body {
 
 .video {
   position: absolute;
-  object-fit: cover; }
+  width: 100%; }
   .video-black, .video video {
     position: fixed;
     width: 100%; }
@@ -26,6 +26,17 @@ html, body {
     display: block; }
   .video_rwd {
     display: none; }
+
+@media only screen and (max-width: 900px) {
+  .video {
+    width: 100%;
+    height: auto; }
+    .video_pc {
+      display: inline-block;
+      width: 100%; }
+    .video_rwd {
+      display: none;
+      width: 100%; } }
 
 @media only screen and (max-width: 600px) {
   .video {
@@ -301,6 +312,10 @@ html, body {
     .skills_logos-sql {
       width: 20rem;
       height: 20rem; }
+
+@media only screen and (max-width: 900px) {
+  .skills_logos img {
+    margin: 4rem 0; } }
 
 @media only screen and (max-width: 600px) {
   .skills_logos img {
