@@ -350,7 +350,7 @@ html, body {
 
 .navigation__nav {
   height: 100vh;
-  width: 0;
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -358,8 +358,7 @@ html, body {
   transition: all 0.4s cubic-bezier(1, -0.01, 0.8, 1.28);
   opacity: 0;
   width: 0;
-  will-change: width;
-  transform: scale(0); }
+  will-change: width; }
 
 .navigation__list {
   position: absolute;
@@ -368,6 +367,7 @@ html, body {
   transform: translate(-50%, -50%);
   list-style: none;
   text-align: center;
+  width: 100%;
   float: right; }
 
 .navigation__item {
@@ -396,8 +396,7 @@ html, body {
 
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
-  width: 100%;
-  transform: scale(1); }
+  width: 100%; }
 
 .navigation__icon {
   position: relative;
