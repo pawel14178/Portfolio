@@ -1,9 +1,5 @@
-var burgerButton = document.getElementById('navigation__icon');
-//var menuListItem = document.getElementsByClassName('navigation__link')[1];
-/* 
-menuListItem.addEventListener('click',() => {
-    burgerButton.click();
-}, false) */
+//Chowanie menu po kliknięciu
+const burgerButton = document.getElementById('navigation__icon');
 
 document.querySelectorAll('.navigation__link').forEach(function(button) {
     button.addEventListener('click',() => {
