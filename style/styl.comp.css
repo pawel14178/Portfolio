@@ -356,8 +356,8 @@ html, body {
   transition: all 0.4s cubic-bezier(1, -0.01, 0.8, 1.28);
   opacity: 0;
   width: 0;
-  will-change: width;
-  transform: scale(0); }
+  will-change: width, transform;
+  transform: translateX(-50rem); }
 
 .navigation__list {
   position: absolute;
@@ -395,7 +395,7 @@ html, body {
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
   width: 100%;
-  transform: scale(1); }
+  transform: translateX(0); }
 
 .navigation__icon {
   position: relative;
