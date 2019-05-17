@@ -22,34 +22,24 @@
             <button class="translate" id="en">EN</button>
             <button class="translate" id="pl">PL</button>
         </div>
-        <header class="content__header">
-            <nav>       
-                <!-- Menu nawigacyjne PC -->         
-                <ul class="nav_ul">
-                    <li><a href="#home"><button key="home" class='lang'>Home</button></a></li>
-                    <li><a href="#about"><button key="about" class='lang'>About</button></a></li>
-                    <li><a href="#skills"><button key="skills" class='lang'>Skills</button></a></li>
-                    <li><a href="#projects"><button key="projects" class='lang'>Projects</button></a></li>
-                    <li><a href="#certificates"><button key="certificates" class='lang'>Certificates</button></a></li>
-                    <li><a href="#info"><button key="info" class='lang'>Info</button></a></li>
+        <!-- Menu -->
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+            <label for="navi-toggle" class="navigation__button" id="navigation__icon">
+                <span class="navigation__icon" >&nbsp;</span>
+            </label>
+            <div class="navigation__background">&nbsp;</div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a class="navigation__link lang" href="#home" key="home" >Home </a></li>
+                    <li class="navigation__item"><a class="navigation__link lang" href="#about" key="about" >About </a></li>
+                    <li class="navigation__item"><a class="navigation__link lang" href="#skills" key="skills" >Skills </a></li>
+                    <li class="navigation__item"><a class="navigation__link lang" href="#projects" key="projects" >Projects </a></li>
+                    <li class="navigation__item"><a class="navigation__link lang" href="#info" key="info" >Info</button></a></li>
                 </ul>
             </nav>
-            <!-- Ikona menu -->
-            <div class="burger">
-                <div class=burger_menu-1></div>
-                <div class=burger_menu-2></div>
-                <div class=burger_menu-3></div>
-            </div>
-            <!-- Menu nawigacyjne RWD -->
-            <ul class="nav_ul_rwd">
-                    <li><a href="#home"><button key="home" class='lang'>Home</button></a></li>
-                    <li><a href="#about"><button key="about" class='lang'>About</button></a></li>
-                    <li><a href="#skills"><button key="skills" class='lang'>Skills</button></a></li>
-                    <li><a href="#projects"><button key="projects" class='lang'>Projects</button></a></li>
-                    <li><a href="#certificates"><button key="certificates" class='lang'>Certificates</button></a></li>
-                    <li><a href="#info"><button key="info" class='lang rwd_info'>Info</button></a></li>
-            </ul>
-        </header>  
+        </div>
+
         <div class="content__wrapper" id="home">
             <!-- Pasek z ikonami mediów społecznościowych -->
             <aside class="social">
@@ -119,17 +109,6 @@
                         <div class="project-modal u_card"><p class="lang" key="projectsmodalb">... and mobile version</p></div>
                         <img src="image/projects/Angel_rwd.jpg" alt="Screen www.angelzory.pl" class="u_card" >
                 </div>
-            </div>
-        </section>
-
-        <!-- Sekcja certyfikaty -->
-        <section class="certificates" id="certificates">                 
-            <h1 class="u_head lang" key="certificateme">Certficates</h1>
-            <div class="certificates_images">
-                    <img src="image/certificate/certificate_css.jpg" alt="Certificate of CSS" class="certificates_images-css u_card">
-                    <img src="image/certificate/certificate_javascript.JPG" alt="Certificate of Javascript" class="certificates_images-js u_card">
-                    <img src="image/certificate/certificate_jquery.JPG" alt="Certificate of Jquery" class="certificates_images-jquery u_card">
-                    <img src="image/certificate/certificate_sql.JPG" alt="Certificate of SQL" class="certificates_images-sql u_card">                    
             </div>
         </section>
 

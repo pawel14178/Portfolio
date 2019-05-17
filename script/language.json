@@ -4,7 +4,6 @@
         "about": "About",
         "skills": "Skills",
         "projects": "Projects",
-        "certificates": "Certificates",
         "info": "Info",
         "sentence": "If you are looking for hard working junior front-end developer",
         "aboutme": "About me",
@@ -18,7 +17,6 @@
         "projectsa": "For now i made only one project",
         "projectsmodala": "My first major project of clothes boutique with asynchronous loading of products and opinions",
         "projectsmodalb": "... and mobile version",
-        "certificateme": "Certicates",
         "infome": "Info",
         "infocontact": "Contact details",
         "infocv": "Download my CV"
@@ -28,7 +26,6 @@
         "about": "O mnie",
         "skills": "Umiejętności",
         "projects": "Projekty",
-        "certificates": "Certyfikaty",
         "info": "Informacje",
         "sentence": "Jeżeli szukasz ciężko pracującego front-endowca",
         "aboutme": "O mnie",
@@ -42,7 +39,6 @@
         "projectsa": "Do tej pory wykonałem jeden projekt",
         "projectsmodala": "Mój pierwszy, większy projekt butiku z asynchronicznym wczytywaniem produktów oraz opinii",
         "projectsmodalb": "... oraz wersja mobilna",
-        "certificateme": "Certyfikaty",
         "infome": "Informacje",
         "infocontact": "Dane kontaktowe",
         "infocv": "Pobierz moje CV"
