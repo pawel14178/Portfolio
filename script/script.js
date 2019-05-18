@@ -1,4 +1,4 @@
-//Chowanie menu po kliknięciu
+/* //Chowanie menu po kliknięciu
 const burgerButton = document.getElementById('navigation__icon');
 
 document.querySelectorAll('.navigation__link').forEach(function(button) {
@@ -6,3 +6,4 @@ document.querySelectorAll('.navigation__link').forEach(function(button) {
         burgerButton.click();
     }, false)
 });
+ */
