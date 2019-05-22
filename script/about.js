@@ -82,35 +82,35 @@ $(function(){
                             //Dla duzych
         else{
 //jeden
-            if(this.scrollY >= 500){
+            if(this.scrollY >= 400){
                 $('.about_one').addClass('u_slide');
             }
             else{
                 $('.about_one').removeClass('u_slide');
             }
     //dwa
-            if(this.scrollY > 600){
+            if(this.scrollY > 500){
                 $('.about_two').addClass('u_slide');
             }
             else{
                 $('.about_two').removeClass('u_slide');
             }
     //trzy
-            if(this.scrollY > 800){
+            if(this.scrollY > 700){
                 $('.about_three').addClass('u_slide');
             }
             else{
                 $('.about_three').removeClass('u_slide');
             }
     //cztery
-            if(this.scrollY > 1000){
+            if(this.scrollY > 900){
                 $('.about_four').addClass('u_slide');
             }
             else{
                 $('.about_four').removeClass('u_slide');
             }
     //piec
-            if(this.scrollY > 1200){
+            if(this.scrollY > 1100){
                 $('.about_five').addClass('u_slide');
             }
             else{
