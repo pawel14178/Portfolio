@@ -3,7 +3,6 @@ $(function(){
                                             //Responsive
         var $width = parseInt($(window).width());
 
-        console.log(this.scrollY);
 
         if ($width < 600) {
             if(this.scrollY > 850){
