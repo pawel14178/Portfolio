@@ -517,23 +517,29 @@ html, body {
   .projects__window {
     width: 100%;
     display: flex;
-    justify-content: center; }
-    .projects__window-pc {
-      position: relative;
-      width: 60%;
-      height: 100%;
-      margin: 2rem; }
-      .projects__window-pc img {
-        width: 100%;
-        height: 100%; }
-    .projects__window-rwd {
-      position: relative;
-      width: 20%;
-      height: 100%;
-      margin: 2rem; }
-      .projects__window-rwd img {
-        width: 100%;
-        height: 100%; }
+    flex-direction: column;
+    justify-content: stretch; }
+    .projects__window-one {
+      display: flex;
+      justify-content: center; }
+      .projects__window-one a {
+        text-decoration: none; }
+      .projects__window-one-pc {
+        position: relative;
+        width: 60%;
+        height: 100%;
+        margin: 2rem; }
+        .projects__window-one-pc img {
+          width: 100%;
+          height: 100%; }
+      .projects__window-one-rwd {
+        position: relative;
+        width: 20%;
+        height: 100%;
+        margin: 2rem; }
+        .projects__window-one-rwd img {
+          width: 100%;
+          height: 100%; }
 
 .project-modal {
   position: absolute;
